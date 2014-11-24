@@ -9,9 +9,9 @@
         "password": "$2a$10$LlejkXscO8kny2THc/ru4u9OQTU8nCwDPR4l5LIqEkWa1VuJiqXFK",
         "friends": [],
         "messages": {},
+        "id": 1,
         "createdAt": "2014-11-24T00:22:03.236Z",
-        "updatedAt": "2014-11-24T00:22:03.236Z",
-        "id": 1
+        "updatedAt": "2014-11-24T00:22:03.236Z"
       }
     ]
   },
