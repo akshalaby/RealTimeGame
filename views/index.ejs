@@ -1,0 +1,173 @@
+<% if (!req.session.user) { %>
+<div class="container row">
+  <div class="half">
+    <h1>Login</h1>
+    <form action="/process" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input class="btn" type="submit">
+    </form>
+  </div>
+  <div class="half">
+    <h1>Guest</h1>
+    <a class="btn" href="/user/create">Play Now</a>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="container row">
+  <div class="half">
+    <h1>Signup</h1>
+    <form action="/user/create" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input class="btn" type="submit">
+    </form>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<% } else { %>
+    <div class="container row nomargintop">
+      <div class="half">
+        <div class="row fullWidth">
+          <h1> All Users </h1>
+          <div class="clearfix"></div>
+        </div>
+        <% if (allUsers){ %>
+          <% for (var u=0; u<allUsers.length; u++){ %>
+            <div class="row nomargintop fullWidth">
+              <span class="username"><%= allUsers[u].username %></span>
+              <% if (user.friends.indexOf(allUsers[u].id) === -1){ %>
+              <div class="addFriend btn floatright" data-name="<%= allUsers[u].username %>" id="<%= allUsers[u].id %>">Add Friend</div>
+              <% } else { %>
+              <div class="btn btn-disabled floatright" id="<%= allUsers[u].id %>">Friends</div>
+              <% } %>
+              <br>
+              <hr>
+            </div>
+          <% } %>
+      <% } %>
+      </div>
+
+      <div id='friendList' class = "half">
+        <div class="row fullWidth">
+          <h1> Friends </h1>
+          <div class="clearfix"></div>
+        </div>
+        <% if (friends){ %>
+          <% for (var u=0; u < friends.length; u++){ %>
+            <div class="row nomargintop fullWidth">
+              <div class="half">
+                <span class="username"><%= friends[u].username %></span>
+              </div>
+              <div class="half">
+                <a class="message btn floatright" data-name="<%= friends[u].username %>"  id="<%= friends[u].id %>">Message</a>
+              </div>
+              <div class="clearfix"></div>
+              <br>
+              <hr>
+            </div>
+          <% } %>
+        <% } %>
+      </div>
+
+    </div>
+
+    <div id = "messageModalContainer" style = "display:none;">
+      <div id = "mask" style = "position:fixed;top:0px;bottom:0px;left:0px;right:0px;background:rgba(255, 255, 255, .5)">
+      </div>
+      <div id = "messageModal">
+        <div id="to">
+        </div>
+        <textarea id = "messageArea"></textarea>
+        <button class="btn" id = "closeMessageContainer">
+          Close
+        </button>
+        <button class="btn" id = "sendMessage">
+          Send
+        </button>
+      </div>
+    </div>
+
+    <script type='text/javascript' src='/jquery.min.js'></script>
+    <script>
+      
+      $(document).ready(function(){
+        $("#sendMessage").click(function(){
+          to = $("#to").data('toid');
+          message = $("#messageArea").val()
+          if(message == "") alert('Please input a message')
+          else{
+            $.ajax({
+              type: "POST",
+              url: "/message/"+to,
+              data: {message: message},
+              success: function(){
+                $("#messageModalContainer").css("display", "none");
+              }
+            });
+          }
+        });
+
+        $("#closeMessageContainer").click(function(){
+          $("#messageModalContainer").css("display", "none");
+        });
+
+        function setMessageModal(el){
+          console.log($(el).data("name"));
+          $("#messageModalContainer").css("display", "block");
+          $("#to").html("To:"+$(el).data("name"));
+          $("#to").data("toid", $(el).attr('id'));
+        }
+
+        $(".message").click(function(){
+          setMessageModal(this);
+        })
+
+        $('.addFriend').click(function(){
+          userid = $(this).attr('id');
+
+          $.ajax({
+            type: "POST",
+            url: "/addFriend/"+userid,
+            success: function(id){
+
+              return function(){
+                var thisButton = $("#"+id);
+
+                thisButton.removeClass('addFriend').addClass('btn-disabled').html('Friends');
+                thisButton.unbind('click');
+
+                row = $("<div class='row nomargintop fullWidth'>");
+                firstcol = $("<div class='half'>");
+                username = $("<span class='username'>");
+
+                username.html(thisButton.attr('data-name'));
+
+                secondcol = $("<div class='half'>");
+                message = $("<a class='message btn floatright'>")
+                message.attr('id', thisButton.attr('id'));
+                message.html('Message');
+                message.data("name", thisButton.attr('data-name'))
+                message.click(function(){
+                  setMessageModal(this)});
+                clearfix = $('<div class="clearfix">')
+                br = $("<br>");
+                hr = $("<hr>");
+                firstcol.append(username);
+                row.append(firstcol);
+                secondcol.append(message);
+                row.append(secondcol);
+                row.append(clearfix);
+                row.append(br);
+                row.append(hr);
+                $('#friendList').append(row);
+              }
+            }(userid)
+          });
+
+        });
+      });
+    </script>
+
+<% } %>

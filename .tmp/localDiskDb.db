@@ -1,0 +1,142 @@
+{
+  "data": {
+    "chatbox": [],
+    "passport": [],
+    "score": [],
+    "user": [
+      {
+        "username": "asdfasd",
+        "password": "$2a$10$LlejkXscO8kny2THc/ru4u9OQTU8nCwDPR4l5LIqEkWa1VuJiqXFK",
+        "friends": [],
+        "messages": {},
+        "createdAt": "2014-11-24T00:22:03.236Z",
+        "updatedAt": "2014-11-24T00:22:03.236Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "chatbox": {
+      "userID": {
+        "type": "string"
+      },
+      "username": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "passport": {
+      "protocol": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "identifier": {
+        "type": "string"
+      },
+      "tokens": {
+        "type": "json"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "score": {
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user",
+        "unique": true
+      },
+      "username": {
+        "type": "string"
+      },
+      "score": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "friends": {
+        "type": "array",
+        "defaultsTo": []
+      },
+      "messages": {
+        "type": "json",
+        "defaultsTo": {}
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "chatbox": {},
+    "passport": {},
+    "score": {},
+    "user": {
+      "id": 1
+    }
+  }
+}

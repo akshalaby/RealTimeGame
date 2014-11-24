@@ -1,0 +1,500 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime',
+5 verbose install   [ 'bcrypt',
+5 verbose install     'ejs',
+5 verbose install     'grunt',
+5 verbose install     'grunt-contrib-clean',
+5 verbose install     'grunt-contrib-coffee',
+5 verbose install     'grunt-contrib-concat',
+5 verbose install     'grunt-contrib-copy',
+5 verbose install     'grunt-contrib-cssmin',
+5 verbose install     'grunt-contrib-jst',
+5 verbose install     'grunt-contrib-less',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-sails-linker',
+5 verbose install     'grunt-sync',
+5 verbose install     'include-all',
+5 verbose install     'passport',
+5 verbose install     'passport-local',
+5 verbose install     'rc',
+5 verbose install     'sails',
+5 verbose install     'sails-disk',
+5 verbose install     'sails-generate-auth',
+5 verbose install     'express' ] ]
+6 info preinstall keepin-it-realtime@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'bcrypt@^0.8.0', null ]
+9 verbose cache add name=undefined spec="bcrypt@^0.8.0" args=["bcrypt@^0.8.0",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'bcrypt@^0.8.0',
+10 verbose parsed url   path: 'bcrypt@^0.8.0',
+10 verbose parsed url   href: 'bcrypt@^0.8.0' }
+11 verbose already installed skipping ejs@~0.8.4 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+12 verbose already installed skipping grunt@0.4.2 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+13 verbose already installed skipping grunt-contrib-clean@~0.5.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+14 verbose already installed skipping grunt-contrib-coffee@~0.10.1 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+15 verbose already installed skipping grunt-contrib-concat@~0.3.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+16 verbose cache add name="bcrypt" spec="^0.8.0" args=["bcrypt","^0.8.0"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '^0.8.0',
+17 verbose parsed url   path: '^0.8.0',
+17 verbose parsed url   href: '^0.8.0' }
+18 verbose addNamed [ 'bcrypt', '^0.8.0' ]
+19 verbose addNamed [ null, '>=0.8.0-0 <0.9.0-0' ]
+20 silly lockFile 54b36fd7-bcrypt-0-8-0 bcrypt@^0.8.0
+21 verbose lock bcrypt@^0.8.0 /Users/ahmedshalaby/.npm/54b36fd7-bcrypt-0-8-0.lock
+22 verbose already installed skipping grunt-contrib-copy@~0.5.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+23 silly addNameRange { name: 'bcrypt', range: '>=0.8.0-0 <0.9.0-0', hasData: false }
+24 verbose already installed skipping grunt-contrib-cssmin@~0.9.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+25 verbose already installed skipping grunt-contrib-jst@~0.6.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+26 verbose already installed skipping grunt-contrib-less@0.11.1 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+27 verbose request where is /bcrypt
+28 verbose request registry https://registry.npmjs.org/
+29 verbose request id 0416a85009d4d27b
+30 verbose url raw /bcrypt
+31 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+32 verbose url resolved https://registry.npmjs.org/bcrypt
+33 verbose request where is https://registry.npmjs.org/bcrypt
+34 info trying registry request attempt 1 at 18:34:10
+35 verbose etag "ADLO8MSLGGC3C6MASFFSH5198"
+36 http GET https://registry.npmjs.org/bcrypt
+37 verbose already installed skipping grunt-contrib-uglify@~0.4.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+38 verbose already installed skipping grunt-contrib-watch@~0.5.3 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+39 verbose already installed skipping grunt-sails-linker@~0.9.5 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+40 verbose already installed skipping grunt-sync@~0.0.4 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+41 verbose already installed skipping include-all@~0.1.3 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+42 verbose cache add [ 'passport@^0.2.1', null ]
+43 verbose cache add name=undefined spec="passport@^0.2.1" args=["passport@^0.2.1",null]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: 'passport@^0.2.1',
+44 verbose parsed url   path: 'passport@^0.2.1',
+44 verbose parsed url   href: 'passport@^0.2.1' }
+45 verbose cache add [ 'passport-local@^1.0.0', null ]
+46 verbose cache add name=undefined spec="passport-local@^1.0.0" args=["passport-local@^1.0.0",null]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: 'passport-local@^1.0.0',
+47 verbose parsed url   path: 'passport-local@^1.0.0',
+47 verbose parsed url   href: 'passport-local@^1.0.0' }
+48 verbose already installed skipping rc@~0.5.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+49 verbose already installed skipping sails@~0.10.5 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+50 verbose already installed skipping sails-disk@~0.10.0 /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+51 verbose cache add [ 'sails-generate-auth@^0.2.0', null ]
+52 verbose cache add name=undefined spec="sails-generate-auth@^0.2.0" args=["sails-generate-auth@^0.2.0",null]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: 'sails-generate-auth@^0.2.0',
+53 verbose parsed url   path: 'sails-generate-auth@^0.2.0',
+53 verbose parsed url   href: 'sails-generate-auth@^0.2.0' }
+54 verbose cache add [ 'express@3.4.8', null ]
+55 verbose cache add name=undefined spec="express@3.4.8" args=["express@3.4.8",null]
+56 verbose parsed url { protocol: null,
+56 verbose parsed url   slashes: null,
+56 verbose parsed url   auth: null,
+56 verbose parsed url   host: null,
+56 verbose parsed url   port: null,
+56 verbose parsed url   hostname: null,
+56 verbose parsed url   hash: null,
+56 verbose parsed url   search: null,
+56 verbose parsed url   query: null,
+56 verbose parsed url   pathname: 'express@3.4.8',
+56 verbose parsed url   path: 'express@3.4.8',
+56 verbose parsed url   href: 'express@3.4.8' }
+57 verbose cache add name="passport" spec="^0.2.1" args=["passport","^0.2.1"]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: '^0.2.1',
+58 verbose parsed url   path: '^0.2.1',
+58 verbose parsed url   href: '^0.2.1' }
+59 verbose addNamed [ 'passport', '^0.2.1' ]
+60 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+61 silly lockFile 7e55d14c-passport-0-2-1 passport@^0.2.1
+62 verbose lock passport@^0.2.1 /Users/ahmedshalaby/.npm/7e55d14c-passport-0-2-1.lock
+63 verbose cache add name="passport-local" spec="^1.0.0" args=["passport-local","^1.0.0"]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: '^1.0.0',
+64 verbose parsed url   path: '^1.0.0',
+64 verbose parsed url   href: '^1.0.0' }
+65 verbose addNamed [ 'passport-local', '^1.0.0' ]
+66 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+67 silly lockFile 1fd84617-passport-local-1-0-0 passport-local@^1.0.0
+68 verbose lock passport-local@^1.0.0 /Users/ahmedshalaby/.npm/1fd84617-passport-local-1-0-0.lock
+69 verbose cache add name="sails-generate-auth" spec="^0.2.0" args=["sails-generate-auth","^0.2.0"]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: '^0.2.0',
+70 verbose parsed url   path: '^0.2.0',
+70 verbose parsed url   href: '^0.2.0' }
+71 verbose addNamed [ 'sails-generate-auth', '^0.2.0' ]
+72 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+73 silly lockFile b47647c2-sails-generate-auth-0-2-0 sails-generate-auth@^0.2.0
+74 verbose lock sails-generate-auth@^0.2.0 /Users/ahmedshalaby/.npm/b47647c2-sails-generate-auth-0-2-0.lock
+75 verbose cache add name="express" spec="3.4.8" args=["express","3.4.8"]
+76 verbose parsed url { protocol: null,
+76 verbose parsed url   slashes: null,
+76 verbose parsed url   auth: null,
+76 verbose parsed url   host: null,
+76 verbose parsed url   port: null,
+76 verbose parsed url   hostname: null,
+76 verbose parsed url   hash: null,
+76 verbose parsed url   search: null,
+76 verbose parsed url   query: null,
+76 verbose parsed url   pathname: '3.4.8',
+76 verbose parsed url   path: '3.4.8',
+76 verbose parsed url   href: '3.4.8' }
+77 verbose addNamed [ 'express', '3.4.8' ]
+78 verbose addNamed [ '3.4.8', '3.4.8' ]
+79 silly lockFile 15cb8528-express-3-4-8 express@3.4.8
+80 verbose lock express@3.4.8 /Users/ahmedshalaby/.npm/15cb8528-express-3-4-8.lock
+81 silly addNameRange { name: 'passport', range: '>=0.2.1-0 <0.3.0-0', hasData: false }
+82 silly addNameRange { name: 'passport-local',
+82 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+82 silly addNameRange   hasData: false }
+83 silly addNameRange { name: 'sails-generate-auth',
+83 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+83 silly addNameRange   hasData: false }
+84 verbose request where is /passport
+85 verbose request registry https://registry.npmjs.org/
+86 verbose url raw /passport
+87 verbose url resolving [ 'https://registry.npmjs.org/', './passport' ]
+88 verbose url resolved https://registry.npmjs.org/passport
+89 verbose request where is https://registry.npmjs.org/passport
+90 info trying registry request attempt 1 at 18:34:10
+91 verbose etag "7O1S2W8B12RCM153Y5VIH43IX"
+92 http GET https://registry.npmjs.org/passport
+93 verbose request where is /passport-local
+94 verbose request registry https://registry.npmjs.org/
+95 verbose url raw /passport-local
+96 verbose url resolving [ 'https://registry.npmjs.org/', './passport-local' ]
+97 verbose url resolved https://registry.npmjs.org/passport-local
+98 verbose request where is https://registry.npmjs.org/passport-local
+99 info trying registry request attempt 1 at 18:34:10
+100 verbose etag "F2MBNKV8QACAF4X2DU6NVNKR8"
+101 http GET https://registry.npmjs.org/passport-local
+102 verbose request where is /sails-generate-auth
+103 verbose request registry https://registry.npmjs.org/
+104 verbose url raw /sails-generate-auth
+105 verbose url resolving [ 'https://registry.npmjs.org/', './sails-generate-auth' ]
+106 verbose url resolved https://registry.npmjs.org/sails-generate-auth
+107 verbose request where is https://registry.npmjs.org/sails-generate-auth
+108 info trying registry request attempt 1 at 18:34:10
+109 verbose etag "AA4AUQKQF274QFK8UU35CEPG9"
+110 http GET https://registry.npmjs.org/sails-generate-auth
+111 verbose request where is /express
+112 verbose request registry https://registry.npmjs.org/
+113 verbose url raw /express
+114 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+115 verbose url resolved https://registry.npmjs.org/express
+116 verbose request where is https://registry.npmjs.org/express
+117 info trying registry request attempt 1 at 18:34:10
+118 verbose etag "83H3CG151JZG85DS656IHITA"
+119 http GET https://registry.npmjs.org/express
+120 http 304 https://registry.npmjs.org/passport-local
+121 silly registry.get cb [ 304,
+121 silly registry.get   { date: 'Sun, 16 Nov 2014 23:34:11 GMT',
+121 silly registry.get     server: 'Apache',
+121 silly registry.get     via: '1.1 varnish',
+121 silly registry.get     'last-modified': 'Sun, 16 Nov 2014 23:34:11 GMT',
+121 silly registry.get     'cache-control': 'max-age=60',
+121 silly registry.get     etag: '"F2MBNKV8QACAF4X2DU6NVNKR8"',
+121 silly registry.get     age: '25',
+121 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+121 silly registry.get     'x-cache': 'HIT',
+121 silly registry.get     'x-cache-hits': '1',
+121 silly registry.get     'x-timer': 'S1416180851.882598,VS0,VE0',
+121 silly registry.get     vary: 'Accept',
+121 silly registry.get     'content-length': '0',
+121 silly registry.get     'keep-alive': 'timeout=10, max=50',
+121 silly registry.get     connection: 'Keep-Alive' } ]
+122 verbose etag https://registry.npmjs.org/passport-local from cache
+123 silly addNameRange number 2 { name: 'passport-local',
+123 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+123 silly addNameRange   hasData: true }
+124 silly addNameRange versions [ 'passport-local',
+124 silly addNameRange   [ '0.1.0',
+124 silly addNameRange     '0.1.1',
+124 silly addNameRange     '0.1.2',
+124 silly addNameRange     '0.1.3',
+124 silly addNameRange     '0.1.4',
+124 silly addNameRange     '0.1.5',
+124 silly addNameRange     '0.1.6',
+124 silly addNameRange     '1.0.0' ] ]
+125 verbose addNamed [ 'passport-local', '1.0.0' ]
+126 verbose addNamed [ '1.0.0', '1.0.0' ]
+127 silly lockFile 8defd22e-passport-local-1-0-0 passport-local@1.0.0
+128 verbose lock passport-local@1.0.0 /Users/ahmedshalaby/.npm/8defd22e-passport-local-1-0-0.lock
+129 silly lockFile 8defd22e-passport-local-1-0-0 passport-local@1.0.0
+130 silly lockFile 8defd22e-passport-local-1-0-0 passport-local@1.0.0
+131 silly lockFile 1fd84617-passport-local-1-0-0 passport-local@^1.0.0
+132 silly lockFile 1fd84617-passport-local-1-0-0 passport-local@^1.0.0
+133 http 200 https://registry.npmjs.org/passport
+134 silly registry.get cb [ 200,
+134 silly registry.get   { date: 'Sun, 16 Nov 2014 23:34:11 GMT',
+134 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+134 silly registry.get     etag: '"2T6LLQOTUE6LRP8RD8SUZ5MIG"',
+134 silly registry.get     'content-type': 'application/json',
+134 silly registry.get     'cache-control': 'max-age=60',
+134 silly registry.get     'content-length': '33714',
+134 silly registry.get     'accept-ranges': 'bytes',
+134 silly registry.get     via: '1.1 varnish',
+134 silly registry.get     age: '32',
+134 silly registry.get     'x-served-by': 'cache-atl6222-ATL',
+134 silly registry.get     'x-cache': 'HIT',
+134 silly registry.get     'x-cache-hits': '1',
+134 silly registry.get     'x-timer': 'S1416180851.879663,VS0,VE1',
+134 silly registry.get     vary: 'Accept',
+134 silly registry.get     'keep-alive': 'timeout=10, max=50',
+134 silly registry.get     connection: 'Keep-Alive' } ]
+135 silly addNameRange number 2 { name: 'passport', range: '>=0.2.1-0 <0.3.0-0', hasData: true }
+136 silly addNameRange versions [ 'passport',
+136 silly addNameRange   [ '0.1.0',
+136 silly addNameRange     '0.1.1',
+136 silly addNameRange     '0.1.2',
+136 silly addNameRange     '0.1.3',
+136 silly addNameRange     '0.1.4',
+136 silly addNameRange     '0.1.5',
+136 silly addNameRange     '0.1.6',
+136 silly addNameRange     '0.1.7',
+136 silly addNameRange     '0.1.8',
+136 silly addNameRange     '0.1.9',
+136 silly addNameRange     '0.1.10',
+136 silly addNameRange     '0.1.11',
+136 silly addNameRange     '0.1.12',
+136 silly addNameRange     '0.1.13',
+136 silly addNameRange     '0.1.14',
+136 silly addNameRange     '0.1.15',
+136 silly addNameRange     '0.1.16',
+136 silly addNameRange     '0.1.17',
+136 silly addNameRange     '0.1.18',
+136 silly addNameRange     '0.2.0',
+136 silly addNameRange     '0.2.1' ] ]
+137 verbose addNamed [ 'passport', '0.2.1' ]
+138 verbose addNamed [ '0.2.1', '0.2.1' ]
+139 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+140 verbose lock passport@0.2.1 /Users/ahmedshalaby/.npm/b563cf22-passport-0-2-1.lock
+141 http 304 https://registry.npmjs.org/sails-generate-auth
+142 silly registry.get cb [ 304,
+142 silly registry.get   { date: 'Sun, 16 Nov 2014 23:34:11 GMT',
+142 silly registry.get     server: 'Apache',
+142 silly registry.get     via: '1.1 varnish',
+142 silly registry.get     'last-modified': 'Sun, 16 Nov 2014 23:34:11 GMT',
+142 silly registry.get     'cache-control': 'max-age=60',
+142 silly registry.get     etag: '"AA4AUQKQF274QFK8UU35CEPG9"',
+142 silly registry.get     age: '0',
+142 silly registry.get     'x-served-by': 'cache-atl6230-ATL',
+142 silly registry.get     'x-cache': 'MISS',
+142 silly registry.get     'x-cache-hits': '0',
+142 silly registry.get     'x-timer': 'S1416180851.834426,VS0,VE145',
+142 silly registry.get     vary: 'Accept',
+142 silly registry.get     'content-length': '0',
+142 silly registry.get     'keep-alive': 'timeout=10, max=50',
+142 silly registry.get     connection: 'Keep-Alive' } ]
+143 verbose etag https://registry.npmjs.org/sails-generate-auth from cache
+144 silly addNameRange number 2 { name: 'sails-generate-auth',
+144 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+144 silly addNameRange   hasData: true }
+145 silly addNameRange versions [ 'sails-generate-auth',
+145 silly addNameRange   [ '0.1.0',
+145 silly addNameRange     '0.1.1',
+145 silly addNameRange     '0.1.2',
+145 silly addNameRange     '0.1.3',
+145 silly addNameRange     '0.1.4',
+145 silly addNameRange     '0.1.5',
+145 silly addNameRange     '0.1.6',
+145 silly addNameRange     '0.2.0' ] ]
+146 verbose addNamed [ 'sails-generate-auth', '0.2.0' ]
+147 verbose addNamed [ '0.2.0', '0.2.0' ]
+148 silly lockFile 146d6a2a-sails-generate-auth-0-2-0 sails-generate-auth@0.2.0
+149 verbose lock sails-generate-auth@0.2.0 /Users/ahmedshalaby/.npm/146d6a2a-sails-generate-auth-0-2-0.lock
+150 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+151 silly lockFile b563cf22-passport-0-2-1 passport@0.2.1
+152 silly lockFile 90a58acd-th-sails-generate-auth-0-2-0-tgz https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+153 verbose lock https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz /Users/ahmedshalaby/.npm/90a58acd-th-sails-generate-auth-0-2-0-tgz.lock
+154 silly lockFile 7e55d14c-passport-0-2-1 passport@^0.2.1
+155 silly lockFile 7e55d14c-passport-0-2-1 passport@^0.2.1
+156 verbose addRemoteTarball [ 'https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz',
+156 verbose addRemoteTarball   'b5923b541c12907c729512efb4aff9eaaae9be96' ]
+157 info retry fetch attempt 1 at 18:34:11
+158 verbose fetch to= /var/folders/fn/kxfhp2k57s7c4qlt39344mhr0000gn/T/npm-29105-kp7GQsN2/registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+159 http GET https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+160 http 200 https://registry.npmjs.org/bcrypt
+161 silly registry.get cb [ 200,
+161 silly registry.get   { date: 'Sun, 16 Nov 2014 23:34:11 GMT',
+161 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+161 silly registry.get     etag: '"7EVU1G3NID80665W4G6L8I28S"',
+161 silly registry.get     'content-type': 'application/json',
+161 silly registry.get     'cache-control': 'max-age=60',
+161 silly registry.get     'content-length': '60095',
+161 silly registry.get     'accept-ranges': 'bytes',
+161 silly registry.get     via: '1.1 varnish',
+161 silly registry.get     age: '0',
+161 silly registry.get     'x-served-by': 'cache-atl6221-ATL',
+161 silly registry.get     'x-cache': 'HIT',
+161 silly registry.get     'x-cache-hits': '1',
+161 silly registry.get     'x-timer': 'S1416180851.880007,VS0,VE29',
+161 silly registry.get     vary: 'Accept',
+161 silly registry.get     'keep-alive': 'timeout=10, max=50',
+161 silly registry.get     connection: 'Keep-Alive' } ]
+162 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.8.0-0 <0.9.0-0', hasData: true }
+163 silly addNameRange versions [ 'bcrypt',
+163 silly addNameRange   [ '0.1.2',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.1.3',
+163 silly addNameRange     '0.2.2',
+163 silly addNameRange     '0.2.3',
+163 silly addNameRange     '0.2.4',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '0.3.2',
+163 silly addNameRange     '0.4.0',
+163 silly addNameRange     '0.4.1',
+163 silly addNameRange     '0.5.0',
+163 silly addNameRange     '0.6.0',
+163 silly addNameRange     '0.7.0',
+163 silly addNameRange     '0.7.1',
+163 silly addNameRange     '0.7.2',
+163 silly addNameRange     '0.7.3',
+163 silly addNameRange     '0.7.4',
+163 silly addNameRange     '0.7.5',
+163 silly addNameRange     '0.7.6',
+163 silly addNameRange     '0.7.7',
+163 silly addNameRange     '0.7.8',
+163 silly addNameRange     '0.8.0' ] ]
+164 verbose addNamed [ 'bcrypt', '0.8.0' ]
+165 verbose addNamed [ '0.8.0', '0.8.0' ]
+166 silly lockFile d33dacdf-bcrypt-0-8-0 bcrypt@0.8.0
+167 verbose lock bcrypt@0.8.0 /Users/ahmedshalaby/.npm/d33dacdf-bcrypt-0-8-0.lock
+168 silly lockFile e2555da9-pmjs-org-bcrypt-bcrypt-0-8-0-tgz https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+169 verbose lock https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz /Users/ahmedshalaby/.npm/e2555da9-pmjs-org-bcrypt-bcrypt-0-8-0-tgz.lock
+170 verbose addRemoteTarball [ 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz',
+170 verbose addRemoteTarball   'b8f226406e5b78c838833a8468a4a0402cbc93c9' ]
+171 info retry fetch attempt 1 at 18:34:11
+172 verbose fetch to= /var/folders/fn/kxfhp2k57s7c4qlt39344mhr0000gn/T/npm-29105-kp7GQsN2/registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+173 http GET https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+174 http 200 https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+175 http 200 https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+176 silly lockFile 90a58acd-th-sails-generate-auth-0-2-0-tgz https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+177 silly lockFile 90a58acd-th-sails-generate-auth-0-2-0-tgz https://registry.npmjs.org/sails-generate-auth/-/sails-generate-auth-0.2.0.tgz
+178 silly lockFile 146d6a2a-sails-generate-auth-0-2-0 sails-generate-auth@0.2.0
+179 silly lockFile 146d6a2a-sails-generate-auth-0-2-0 sails-generate-auth@0.2.0
+180 silly lockFile b47647c2-sails-generate-auth-0-2-0 sails-generate-auth@^0.2.0
+181 silly lockFile b47647c2-sails-generate-auth-0-2-0 sails-generate-auth@^0.2.0
+182 silly lockFile e2555da9-pmjs-org-bcrypt-bcrypt-0-8-0-tgz https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+183 silly lockFile e2555da9-pmjs-org-bcrypt-bcrypt-0-8-0-tgz https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.0.tgz
+184 silly lockFile d33dacdf-bcrypt-0-8-0 bcrypt@0.8.0
+185 silly lockFile d33dacdf-bcrypt-0-8-0 bcrypt@0.8.0
+186 silly lockFile 54b36fd7-bcrypt-0-8-0 bcrypt@^0.8.0
+187 silly lockFile 54b36fd7-bcrypt-0-8-0 bcrypt@^0.8.0
+188 http 200 https://registry.npmjs.org/express
+189 silly registry.get cb [ 200,
+189 silly registry.get   { date: 'Sun, 16 Nov 2014 23:34:11 GMT',
+189 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+189 silly registry.get     etag: '"8GW0MS8WQIWW2WZYIMEBLYB3"',
+189 silly registry.get     'content-type': 'application/json',
+189 silly registry.get     'cache-control': 'max-age=60',
+189 silly registry.get     'content-length': '421811',
+189 silly registry.get     'accept-ranges': 'bytes',
+189 silly registry.get     via: '1.1 varnish',
+189 silly registry.get     age: '0',
+189 silly registry.get     'x-served-by': 'cache-atl6221-ATL',
+189 silly registry.get     'x-cache': 'HIT',
+189 silly registry.get     'x-cache-hits': '1',
+189 silly registry.get     'x-timer': 'S1416180851.879407,VS0,VE111',
+189 silly registry.get     vary: 'Accept',
+189 silly registry.get     'keep-alive': 'timeout=10, max=50',
+189 silly registry.get     connection: 'Keep-Alive' } ]
+190 silly lockFile 72227381-js-org-express-express-3-4-8-tgz https://registry.npmjs.org/express/-/express-3.4.8.tgz
+191 verbose lock https://registry.npmjs.org/express/-/express-3.4.8.tgz /Users/ahmedshalaby/.npm/72227381-js-org-express-express-3-4-8-tgz.lock
+192 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.4.8.tgz',
+192 verbose addRemoteTarball   'aa7a8986de07053337f4bc5ed9a6453d9cc8e2e1' ]
+193 info retry fetch attempt 1 at 18:34:12
+194 verbose fetch to= /var/folders/fn/kxfhp2k57s7c4qlt39344mhr0000gn/T/npm-29105-kp7GQsN2/registry.npmjs.org/express/-/express-3.4.8.tgz
+195 http GET https://registry.npmjs.org/express/-/express-3.4.8.tgz
+196 http 200 https://registry.npmjs.org/express/-/express-3.4.8.tgz
+197 silly lockFile 72227381-js-org-express-express-3-4-8-tgz https://registry.npmjs.org/express/-/express-3.4.8.tgz
+198 silly lockFile 72227381-js-org-express-express-3-4-8-tgz https://registry.npmjs.org/express/-/express-3.4.8.tgz
+199 silly lockFile 15cb8528-express-3-4-8 express@3.4.8
+200 silly lockFile 15cb8528-express-3-4-8 express@3.4.8
+201 error Error: EACCES, mkdir '/Users/ahmedshalaby/.npm/express/3.4.8'
+201 error  { [Error: EACCES, mkdir '/Users/ahmedshalaby/.npm/express/3.4.8']
+201 error   errno: 3,
+201 error   code: 'EACCES',
+201 error   path: '/Users/ahmedshalaby/.npm/express/3.4.8',
+201 error   parent: 'keepin-it-realtime' }
+202 error Please try running this command again as root/Administrator.
+203 error System Darwin 13.2.0
+204 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+205 error cwd /Users/ahmedshalaby/Desktop/Team94/keepin-it-realtime
+206 error node -v v0.10.33
+207 error npm -v 1.4.28
+208 error path /Users/ahmedshalaby/.npm/express/3.4.8
+209 error code EACCES
+210 error errno 3
+211 error stack Error: EACCES, mkdir '/Users/ahmedshalaby/.npm/express/3.4.8'
+212 verbose exit [ 3, true ]

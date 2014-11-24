@@ -1,0 +1,73 @@
+<!-- <header>
+    <div class="wrapper">
+      <a href="#"><img src="" title="keepin' it realtime" /></a>
+
+      <span id="usernav"><a href="#">Logout</a> - <a href="#">Settings</a> - <a href="#">My Profile<span><img src=""/></span></a></span>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="n" class="clearfix">
+      <li><a href="#">Home</a></li>
+      <li class="sel"><a href="#">Account</a></li>
+    </ul>
+  </nav> -->
+
+  <div class="container clearfix">
+    <section id="left">
+      <div id="userStats" class="clearfix">
+        <div class="pic">
+          <a href="#"><img src="/images/img/user_avatar.jpg" width="150" height="150" /></a>
+        </div>
+
+        <div class="data">
+          <h1><%= user.username %></h1>
+          <div class="sep"></div>
+          <h2>Stats</h2>
+
+          <% if (scores){ %>
+            <% for (var u=0; u < scores.length; u++){ %>
+
+              <ul class="numbers clearfix">
+                <li>Points<strong><%= scores[u].score %></strong></li>
+                <li class="nobrdr">Date<strong class="score-<%= u %>">
+                  <script type="text/javascript">
+                    (function($){
+                      $(function(){
+                        $('.score-<%= u %>').html($.timeago("<%=scores[u].updatedAt%>"));
+                      }); // end of document ready
+                    })(jQuery); // end of jQuery name space
+                  </script>
+                </strong></li>
+              </ul>
+              
+
+            <% } %>
+          <% } %>
+
+        </div>
+      </div>
+
+      <h1>About Me:</h1>
+      <p>This is a profile page</p>
+    </section>
+
+    <section id="right">
+      <div class="gcontent">
+        <div class="head"><h1>Friends</h1></div>
+        <div class="boxy">
+          <div class="friendslist clearfix">
+          <% if (friends){ %>
+            <% for (var u=0; u < friends.length; u++){ %>
+              <div class="friend">
+                <a href="#"><img src="/images/img/friend_avatar_default.jpg" width="60" height="60" alt="User 1" /></a><span class="friendly"><a href="/user/show/<%= friends[u].id %>"><%= friends[u].username %></a></span>
+              </div>
+            <% } %>
+          <% } %>
+          </div>
+
+          <span><a href="#">See all...</a></span>
+        </div>
+      </div>
+    </section>
+  </div>
